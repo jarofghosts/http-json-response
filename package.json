@@ -1,0 +1,23 @@
+{
+  "name": "http-json-response",
+  "version": "0.0.0",
+  "description": "send json easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jarofghosts/http-json-response.git"
+  },
+  "keywords": [
+    "json",
+    "http",
+    "response"
+  ],
+  "author": "jesse keane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarofghosts/http-json-response/issues"
+  }
+}
