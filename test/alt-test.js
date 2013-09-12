@@ -4,7 +4,7 @@ var assert = require('assert'),
 
 http.ServerResponse.prototype.send = send;
 
-http.createServer(function (req, res) {
+var server = http.createServer(function (req, res) {
   if (req.url == '/first') return res.send(res, 403, { hello: 'world' });
   if (req.url == '/second') return res.send(res, { hi: 'there' });
 }).listen(96288);
@@ -30,7 +30,7 @@ function testWithoutCode() {
     });
     res.on('end', function () {
       assert.equal(data, '{"hi":"there"}');
-      process.exit();
+      server.close();
     });
   });
 }

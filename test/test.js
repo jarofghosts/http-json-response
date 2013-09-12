@@ -2,7 +2,7 @@ var assert = require('assert'),
     send = require('../'),
     http = require('http');
 
-http.createServer(function (req, res) {
+var server = http.createServer(function (req, res) {
   if (req.url == '/first') return send(res, 403, { hello: 'world' });
   if (req.url == '/second') return send(res, { hi: 'there' });
 }).listen(96288);
@@ -28,7 +28,7 @@ function testWithoutCode() {
     });
     res.on('end', function () {
       assert.equal(data, '{"hi":"there"}');
-      process.exit();
+      server.close();
     });
   });
 }
