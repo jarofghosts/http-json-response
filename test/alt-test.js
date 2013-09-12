@@ -2,9 +2,11 @@ var assert = require('assert'),
     send = require('../'),
     http = require('http');
 
+http.ServerResponse.prototype.send = send;
+
 http.createServer(function (req, res) {
-  if (req.url == '/first') return send(res, 403, { hello: 'world' });
-  if (req.url == '/second') return send(res, { hi: 'there' });
+  if (req.url == '/first') return res.send(res, 403, { hello: 'world' });
+  if (req.url == '/second') return res.send(res, { hi: 'there' });
 }).listen(96288);
 
 http.get({ port: 96288, path: '/first' }, function (res) {
