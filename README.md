@@ -37,7 +37,8 @@ http.createServer(function (req, res) {
 
 ## notes
 
-If the status code is not specified, it defaults to 200 (OK). `send` automatically calls `res.end()`.
++ `send` automatically calls `res.end()`.
++ If the status code is not specified, it defaults to 200 (OK).
 
 ## license
 
