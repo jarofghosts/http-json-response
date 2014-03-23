@@ -19,5 +19,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jarofghosts/http-json-response/issues"
+  },
+  "devDependencies": {
+    "tape": "^2.11.0"
   }
 }
