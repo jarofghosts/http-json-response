@@ -4,7 +4,7 @@
   "description": "send json easy",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js && node test/alt-test.js"
+    "test": "tape test/*.test.js"
   },
   "repository": {
     "type": "git",
