@@ -1,10 +1,10 @@
 {
   "name": "http-json-response",
   "version": "1.0.0",
-  "description": "send json easy",
+  "description": "send json responses easy",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.test.js"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,6 @@
     "url": "https://github.com/jarofghosts/http-json-response/issues"
   },
   "devDependencies": {
-    "tape": "^2.11.0"
+    "tape": "^2.13.3"
   }
 }
