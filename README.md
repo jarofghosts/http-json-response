@@ -1,7 +1,8 @@
-http-json-response
-====
+# http-json-response
 
-[![Build Status](https://travis-ci.org/jarofghosts/http-json-response.png?branch=master)](https://travis-ci.org/jarofghosts/http-json-response)
+[![Build Status](http://img.shields.io/travis/jarofghosts/http-json-response.svg?style=flat)](https://travis-ci.org/jarofghosts/http-json-response)
+[![npm install](http://img.shields.io/npm/dm/http-json-response.svg?style=flat)](https://www.npmjs.org/package/http-json-response)
+
 
 makes sending JSON over http a little more convenient
 
